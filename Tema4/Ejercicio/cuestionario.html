@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                         <title>Formulario de Curiculum</title>
+    </head>
+    <body>
+    <form action="proceso.php" method="post">
+        <fieldset>
+            <legend>Datos personales:</legend>
+        <p>Nombre:<input type="text" name="nombre" required><br><br></p>
+        <p>Apellidos:<input type="text" name="apellidos" required></p>
+        <p>Edad: <input type="number" name="edad"></p>
+        Género:
+        <p>
+                <input type="radio" name="sexo" value="hombre">Hombre
+                <input type="radio" name="sexo" value="mujer">Mujer
+            </p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Contacto</legend>
+            <br>
+            Correo electronico : <input type ="text" name="email" required><br><br>
+            Código postal: <input type ="number" name ="codigo postal" required><br><br>
+            Dirección: <input type ="text" name="dirección" required><br><br>
+            Ciudad: <select name ="ciudad" required>
+                <option value="Jaén">Jaén</option>
+                <option value="Cadiz">Cadiz</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Cordoba">Cordoba</option>
+            </select>
+            <br><br>
+            Contraseña: <input type="password" name="contraseña" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos de interés</legend>
+            Estado civil:
+            <p>
+            <input type="radio" name="casado" value="si">Casado
+            <input type="radio" name="casado" value="no">No Casado
+                <br><br>
+                Hobbies:
+            </p>
+            <input type="checkbox" name="leer" value="leer">Leer
+            <br>
+            <input type="checkbox" name="viajar" value="viajar">Viajar
+            <br>
+            <input type="checkbox" name="correr" value="correr">Correr
+            <br>
+            <input type="checkbox" name="cine" value="cine">Cine
+             <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios Adicionales</legend>
+                <textarea name="comentarios" rows="5" cols="40" placeholder="Escribe aquí tus comentarios..."></textarea>
+            </fieldset>
+               <input type="submit" value="Enviar">
+               <input type="reset" value="Resetear">
+        </form>
+        </body>
+    </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                         <title>Formulario cajas de texto</title>
+    </head>
+    <body>
+    <form action="proceso.php" method="post">
+        <fieldset>
+            <legend>Datos personales:</legend>
+        <p>Nombre:<input type="text" name="nombre" required><br><br></p>
+        <p>Edad: <input type="number" name="edad"></p>
+        </fieldset>
+        <br>
+        <fieldset
+        <br>
+            <legend>Datos de interes:</legend>
+            <br>
+            ¿Estas casado?
+            <input type="radio" name="casado" value="si">Si
+            <input type="radio" name="casado" value="no">No
+            <br><br>
+            Deportes que practicas:
+            <input type="checkbox" name="futbol" value="Futbol">Futbol
+            <input type="checkbox" name="baloncesto" value="Baloncesto">Baloncesto
+            <input type="checkbox" name="tenis" value="Tenis">Tenis
+             <br><br>
+            <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        </body>
+    </html>
