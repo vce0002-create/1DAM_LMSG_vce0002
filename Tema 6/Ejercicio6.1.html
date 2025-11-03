@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web - Verónica Maria Chica Espinosa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>MI PÁGINA WEB</h1>
+        <nav>
+            <a href="#formulario">Formulario</a> |
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#faq">Preguntas Frecuentes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>SECCIÓN PRINCIPAL</h2>
+
+            <article>
+                <h3>PRIMER ARTÍCULO</h3>
+                <p>Este es el logo de HTML5</p>
+                <img src="https://share.google/images/dABxc6rWP4wPUCdXP" alt="Logo HTML5" width="120">
+            </article>
+
+            <article>
+                <h3>SEGUNDO ARTÍCULO</h3>
+                <p>Este es el logo de CSS3.</p>
+                <figure>
+                    <img src="https://share.google/images/iFn2rI51JRMgEVj5O" alt="Logo CSS3" width="120">
+                </figure>
+            </article>
+        </section>
+
+        <aside>
+            <h4>Publicidad</h4>
+            <img src="https://share.google/images/LljPmE9WQPqJyo2mC" alt="Publicidad" width="150">
+        </aside>
+
+        <!-- FORMULARIO -->
+        <section id="formulario">
+            <h2>Formulario con nuevos controles HTML5</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Introduce tu nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="tuemail@ejemplo.com" required><br><br>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha"><br><br>
+
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color"><br><br>
+
+                <label for="rango">Nivel de satisfacción (1-10):</label>
+                <input type="range" id="rango" min="1" max="10" step="1"><br><br>
+
+                <label for="url">Tu sitio web:</label>
+                <input type="url" id="url" placeholder="https://github.com/vce0002-create/1DAM_LMSG_vce0002/tree/main/Tema4/Ejercicio" target="_blank""><br><br>
+
+                <label for="numero">Edad:</label>
+                <input type="number" id="numero" min="1" max="100" step="1"><br><br>
+
+                <label>Progreso del curso:</label>
+                <progress value="75" max="100"></progress><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- MULTIMEDIA -->
+        <section id="multimedia">
+            <h2>Elementos Multimedia</h2>
+
+            <h3>🎵 Audio incorporado desde YouTube</h3>
+            <iframe width="400" height="225"
+                src="c:\Users\vchic\Downloads\OneRepublic - Wherever I Go.mp3.mp3"
+                title="Audio YouTube"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+            <h3>🎥 Video incorporado desde YouTube</h3>
+            <iframe width="560" height="315" 
+            src="https://youtu.be/MFEVevUHIV8?si=cWT_hDTFh5fUn8Yo" 
+            title="Video de Informática" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+
+            <h3>📄 Presentación del proyecto</h3>
+            <iframe src="file:///C:/Users/vchic/Downloads/digitalizacion_Ivan_Vero%20(1).pdf"
+            width="600" height="400">
+            </iframe>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+
+            <details>
+                <summary>¿Qué es HTML5?</summary>
+                <p>HTML5 es la versión más reciente del lenguaje de marcado usado para crear sitios web estructurados y accesibles.</p>
+            </details>
+
+            <details>
+                <summary>¿Qué diferencia hay entre &lt;section&gt; y &lt;article&gt;?</summary>
+                <p>Una &lt;section&gt; agrupa contenido relacionado, mientras que un &lt;article&gt; es contenido independiente que puede tener sentido por sí mismo.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo se inserta un video de YouTube en HTML5?</summary>
+                <p>Usando la etiqueta &lt;iframe&gt; con la URL del video y los atributos adecuados (width, height, allowfullscreen, etc.).</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Fecha actual</h4>
+        <p>Hoy es 31/10/2025</p>
+
+        <h4>Avisos legales</h4>
+        <a href="#">Política de cookies</a>
+
+        <h4>Redes sociales</h4>
+        <a href="#faq">FAQ (Preguntas frecuentes)</a>
+    </footer>
+</body>
+</html>

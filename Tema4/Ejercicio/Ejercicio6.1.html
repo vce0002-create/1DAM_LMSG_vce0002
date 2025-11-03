@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web - Verónica Maria Chica Espinosa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>MI PÁGINA WEB</h1>
+        <nav>
+            <a href="#formulario">Formulario</a> |
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#faq">Preguntas Frecuentes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>SECCIÓN PRINCIPAL</h2>
+            <section>
+  <article>
+    <h3>PRIMER ARTÍCULO</h3>
+    <p>Este es el logo de HTML5:</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" 
+         alt="Logo HTML5" width="120">
+  </article>
+
+  <article>
+    <h3>SEGUNDO ARTÍCULO</h3>
+    <p>Este es el logo de CSS3:</p>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" 
+           alt="Logo CSS3" width="120">
+      <figcaption>Logo oficial de CSS3</figcaption>
+    </figure>
+  </article>
+</section>
+
+<aside>
+  <h4>Publicidad</h4>
+    <img src="https://www.ceupe.com/images/easyblog_articles/3406/b2ap3_large_publicidad.png" alt="Publicidad" width="150">
+</aside>
+
+        <!-- FORMULARIO -->
+        <section id="formulario">
+            <h2>Formulario con nuevos controles HTML5</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Introduce tu nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="tuemail@ejemplo.com" required><br><br>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha"><br><br>
+
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color"><br><br>
+
+                <label for="rango">Nivel de satisfacción (1-10):</label>
+                <input type="range" id="rango" min="1" max="10" step="1"><br><br>
+
+                <label for="url">Tu sitio web:</label>
+                <input type="url" id="url" placeholder="https://github.com/vce0002-create/1DAM_LMSG_vce0002/tree/main/Tema4/Ejercicio" target="_blank""><br><br>
+
+                <label for="numero">Edad:</label>
+                <input type="number" id="numero" min="1" max="100" step="1"><br><br>
+
+                <label>Progreso del curso:</label>
+                <progress value="75" max="100"></progress><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- MULTIMEDIA -->
+        <section id="multimedia">
+            <h2>Elementos Multimedia</h2>
+
+            <h3>🎵 Audio incorporado desde YouTube</h3>
+            <iframe width="400" height="225"
+                src="c:\Users\vchic\Downloads\OneRepublic - Wherever I Go.mp3.mp3"
+                title="Audio YouTube"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        <h3>🎥 Video incorporado desde YouTube</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/MFEVevUHIV8" 
+        title="Video de Informática" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+</iframe>
+
+
+            <h3>📄 Presentación del proyecto</h3>
+            <iframe src="file:///C:/Users/vchic/Downloads/digitalizacion_Ivan_Vero%20(1).pdf"
+            width="600" height="400">
+            </iframe>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+
+            <details>
+                <summary>¿Qué es HTML5?</summary>
+                <p>HTML5 es la versión más reciente del lenguaje de marcado usado para crear sitios web estructurados y accesibles.
+                es la última versión del Lenguaje de Marcado de Hipertexto (HTML) y se utiliza para estructurar y presentar contenido en una página web. 
+                No es un lenguaje de programación, sino un lenguaje de marcado que define la estructura y el contenido de una página, como texto, imágenes y videos. 
+                Trabaja en conjunto con CSS (para el estilo) y JavaScript (para la interactividad) para crear sitios web modernos, ofreciendo nuevas etiquetas semánticas y soporte multimedia nativo. </p>
+            </details>
+           <details>
+  <summary>¿Cuál es la diferencia entre &lt;section&gt; y &lt;article&gt;?</summary>
+  <p>
+    La etiqueta &lt;section&gt; se utiliza para agrupar contenido que forma parte de un mismo tema o bloque dentro de una página. 
+    Es ideal para dividir un documento en secciones temáticas, como “Introducción”, “Servicios” o “Contacto”.
+  </p>
+  <p>
+    En cambio, la etiqueta &lt;article&gt; se emplea para contenido autónomo e independiente, que podría tener sentido fuera del contexto del sitio, 
+    como una noticia, un post de blog, una reseña o una publicación en un foro.
+  </p>
+  <p>
+    En resumen, &lt;section&gt; organiza el contenido dentro de la estructura del sitio, mientras que &lt;article&gt; representa unidades de contenido que pueden existir por sí solas.
+  </p>
+</details>
+<details>
+  <summary>¿Cómo se inserta un video de YouTube en HTML5?</summary>
+  <p>
+    Para insertar un video de YouTube en una página HTML5, se utiliza la etiqueta &lt;iframe&gt;, que permite incrustar contenido externo dentro del documento.
+  </p>
+  <p>
+    En el atributo <code>src</code> del &lt;iframe&gt; se coloca la URL del video en formato de inserción (embed), que YouTube genera automáticamente al usar la opción “Compartir &gt; Insertar”.
+  </p>
+  <p>
+    También se pueden añadir atributos como <code>width</code> y <code>height</code> para definir el tamaño del reproductor, 
+    y <code>allowfullscreen</code> para permitir que el video se vea en pantalla completa.
+  </p>
+</details>
+
+        </section>
+    </main>
+
+    <footer>
+        <h4>Fecha actual</h4>
+        <p>Hoy es 31/10/2025</p>
+
+        <h4>Avisos legales</h4>
+        <a href="#">Política de cookies</a>
+    </footer>
+</body>
+</html>
