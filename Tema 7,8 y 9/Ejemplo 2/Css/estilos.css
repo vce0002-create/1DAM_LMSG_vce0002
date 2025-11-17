@@ -1,10 +1,11 @@
-* { color:blue}
-p {text-align: center;}
-.miclase {border: solid 1px red;}
-#miidentificador { background-color: cyan;}
-ul li {background-color: gray;}
-h1, h2 {border: solid 3px green;}
-p>a {background-color: yellow;}
-p+div {border: solid 2px blue;}
-p [lang="es"] {background-color: red;}
-p [lang="en"] {background-color: orange;}
+*{color:blue;}/*Todas las letras en azul*/
+p{text-align:center;}/*Los p están centrados*/
+.miclase {border:solid 1px red;}/*.miclase tiene un reborde continuo en rojo*/
+#miidentificador {background-color:cyan;}/*#miidentificador tiene fondo cyan*/
+ul li {background-color:gray;}/* ul li tiene fundo gris*/
+h1, h2 {border:solid 3px green;}/*h1 y h2 tiene un borde continuo verde*/
+p>a {background-color:yellow;}/* los a dentro de un p serán subrrallados de amarillo*/
+p+div{border:solid 2px blue;}/* los div dentro de un p tendran un reborde continuo azul*/
+p[lang="es"] {background-color:red;}/* los p con lang es tendrán un fondo rojo*/
+p[lang="en"] {background-color:orange;}/* los p con lang en tendrán un fondo naranja*/
+/* IMPORTANTE NO PONER ESPACIOS ENTRE LAS CONDICIONES*/
