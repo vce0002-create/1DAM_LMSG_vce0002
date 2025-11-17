@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+}
+h1{
+    text-align: center;
+}
+.tarjeta{
+    width: 300px;
+    background-color: black;
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px auto; /* centrar*/
+}
+.tarjeta img{
+    display: block;
+    margin: 0 auto; /* centrar*/
+    border: 2px solid green;
+}
+.nombre{
+    text-align: center;
+    color: orange;
+}
+.profesion{
+    text-align: center;
+    color: red;
+    font-style:italic ;
+}
+.descripcion{
+    font-size: 14px;
+    text-align: justify;
+}
+.boton{
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    background-color:pink ;
+    color: white;
+    text-decoration: none;
+}
+.boton{
+    background-color: yellowgreen;
+}
