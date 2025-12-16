@@ -1,0 +1,16 @@
+use liga;
+SELECT * FROM jugador WHERE equipo = 3 ORDER BY apellido;
+SELECT DISTINCT posicion FROM jugador;
+SELECT * FROM jugador WHERE salario BETWEEN 60000 AND 100000;
+SELECT * FROM jugador WHERE posicion = 'Pívot' ORDER BY id_jugador;
+SELECT * FROM jugador WHERE altura > 2.00 AND salario >= 50000;
+SELECT nombre, apellido FROM jugador WHERE posicion = 'Pívot' AND salario > 100000;
+SELECT nombre FROM jugador WHERE equipo IN (1, 2) AND posicion = 'Base';
+SELECT * FROM jugador WHERE equipo IN (1, 2) AND salario > 80000;
+SELECT DISTINCT posicion FROM jugador WHERE posicion IS NOT NULL;
+SELECT * FROM jugador ORDER BY altura DESC LIMIT 5;
+SELECT *, (salario * 12 * 0.82) AS "SALARIO NETO ANUAL" FROM jugador;
+SELECT * FROM jugador WHERE (salario * 12 * 0.82) >= 70000;
+SELECT * FROM jugador WHERE posicion IS NULL;
+SELECT * FROM partido WHERE YEAR (fecha) < "2012/01/01";
+SELECT * FROM jugador WHERE altura > 1.90 AND salario > 100000;

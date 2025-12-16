@@ -1,0 +1,44 @@
+USE TiendaTecnologia;
+SELECT Id_fab,Id_producto,Descripcion,Precio FROM Productos;
+SELECT * FROM Pedidos WHERE Id_Cliente = 2;
+SELECT * FROM Productos WHERE precio > 100;
+SELECT *  FROM Clientes WHERE Ciudad = 'Madrid' OR Ciudad = 'Barcelona';
+SELECT AVG (Precio) AS Precio_Medio FROM Productos WHERE Id_fab ='1';
+SELECT min(Fecha_pedido) FROM Pedidos;
+SELECT DISTINCT Pais FROM fabricantes;
+SELECT * FROM PedidoS WHERE fecha_pedido BETWEEN '2024-01-01' AND '2024-02-05';
+SELECT nombre, CONCAT(direccion, ' ', ciudad) AS nombre_completo FROM Clientes;
+SELECT pais, COUNT(id_fab) AS total_fabricantes FROM fabricanteS GROUP BY pais;
+SELECT *, precio * 1.21 AS precio_con_iva FROM productos;
+SELECT * FROM Productos ORDER BY Precio DESC LIMIT 1;
+SELECT Id_cliente, count(*) FROM Pedidos GROUP BY Id_cliente;
+SELECT * FROM Productos ORDER BY Precio DESC;
+SELECT * FROM Clientes ORDER BY Ciudad ASC;
+SELECT * FROM Productos ORDER BY Precio LIMIT 5;
+SELECT Id_fab, count(*) AS NumeroFabricantes FROM Productos GROUP BY Id_fab;
+SELECT Id_fab, count(*) AS CantidadProducto FROM Productos GROUP BY Id_fab HAVING count(*) >1;
+SELECT * FROM clientes WHERE nombre LIKE 'A%';
+SELECT * FROM productos WHERE descripcion LIKE '%Portátil%';
+SELECT UPPER(Nombre) FROM Clientes AS Nombre_mayusculas;
+SELECT LOWER(Descripcion) FROM Productos AS Descripcion_minusculas;
+SELECT UPPER(CONCAT(Nombre, ' - ', Direccion)) AS Nombre_Completo FROM clientes;
+SELECT CONCAT('Producto: ', descripcion) FROM productos AS Producto_Descripcion;
+SELECT SUBSTRING(pais, 1, 3) AS abreviatura_pais, pais FROM fabricantes;
+SELECT REPLACE(direccion, 'Calle', 'Avda.') FROM clientes AS direccion_avda;
+SELECT N_pedido, Fecha_pedido, DATEDIFF(CURDATE(), fecha_pedido) AS dias_transcurridos FROM Pedidos;
+SELECT N_pedido, Fecha_pedido, LAST_DAY(fecha_pedido) AS ultimo_dia_del_mes FROM pedidos;
+SELECT N_pedido, Estado, CASE WHEN Estado = 'Finalizado' THEN 'Finalizado' WHEN Estado = 'Anulado' THEN 'Anulado' ELSE 'En Gestión' END AS estado_personalizado FROM pedidos;
+SELECT * FROM pedidos WHERE YEAR(fecha_pedido) = 2023;
+SELECT descripcion, precio, POWER(precio, 2) AS precio_al_cuadradon FROM productos;
+SELECT descripcion, precio, ROUND(precio, 1) AS precio_redondeado FROM productos;
+SELECT N_pedido, Fecha_pedido, YEAR(fecha_pedido) AS anio_pedido FROM pedidos;
+SELECT COUNT(N_pedido) AS total_pedidos_2024 FROM pedidos WHERE YEAR(fecha_pedido) = 2024;
+SELECT nombre, REVERSE(nombre) AS nombre_invertido FROM clientes;
+SELECT nombre, LENGTH(nombre) AS longitud_nombre FROM clientes;
+SELECT nombre, LEFT(nombre, 4) AS cuatro_primeros_chars FROM clientes;
+SELECT descripcion, precio, CASE WHEN precio >= 500 THEN 'CARO' ELSE 'BARATO' END AS clasificacion_precio FROM productos;
+SELECT N_pedido, SUM(cant) 
+AS cant 
+FROM Detalles_Pedido 
+GROUP BY N_pedido;
+SELECT ciudad, COUNT(id_cli) AS total_clientes FROM clientes GROUP BY ciudad HAVING COUNT(id_cli) > 1;

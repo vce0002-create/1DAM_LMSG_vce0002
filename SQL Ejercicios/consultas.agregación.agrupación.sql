@@ -1,0 +1,14 @@
+use liga;
+SELECT AVG(salario) AS SalarioMedio FROM jugador;
+SELECT equipo, SUM(altura) AS SumaAlturas FROM jugador GROUP BY equipo HAVING SUM(altura) > 5;
+SELECT COUNT(id_jugador) AS JugadoresMasDeDosMetros FROM jugador WHERE altura > 2.00;
+SELECT equipo, posicion, COUNT(id_jugador) AS NumeroJugador FROM jugador WHERE posicion IS NOT NULL  GROUP BY equipo, posicion ORDER BY equipo, posicion;
+SELECT equipo, SUM(salario) AS SalarioTotal FROM jugador GROUP BY equipo HAVING COUNT(id_jugador) > 4;
+SELECT COUNT(DISTINCT ciudad) AS NumeroCiudades FROM equipo;
+SELECT equipo,  MAX(salario) AS SalarioMaximo, MIN(salario) AS SalarioMinimo, MAX(salario) - MIN(salario) AS DiferenciaSalario FROM jugador GROUP BY equipo;
+SELECT equipo, AVG(salario) AS SalarioMedio FROM jugador GROUP BY equipo HAVING AVG(salario) > 100000;
+SELECT equipo, COUNT(id_jugador) AS NumeroJugador FROM jugador GROUP BY equipo;
+SELECT equipo, AVG(altura) AS AlturaMedia FROM jugador GROUP BY equipo;
+SELECT equipo, SUM(salario) AS SalarioTotal FROM jugador GROUP BY equipo;
+SELECT equipo, AVG(altura) AS AlturaMedia FROM jugador GROUP BY equipo HAVING AVG(altura) > 2.00;
+SELECT equipo, MAX(altura) AS AlturaMaxima FROM jugador GROUP BY equipo;
