@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="EJ1.css" type="text/css"?>
+
+<listaclientes>
+
+    <cliente cif="8767865">
+        <nombre>Mercasa</nombre>
+        <diasentrega>Lunes</diasentrega>
+        <diasentrega>Martes</diasentrega>
+    </cliente>
+
+    <cliente cif ="8293736">
+        <nombre id= "especial">Acer SL</nombre>
+        <diasentrega>Lunes</diasentrega>
+    </cliente>
+</listaclientes>
+<!--XML es sensible a las mayusculas por lo que si pone mayuscula en una parte pero en otra no dará error.-->
