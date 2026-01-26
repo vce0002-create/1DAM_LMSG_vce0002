@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="autor" type="xs:string" maxOccurs="2"/>
+                <xs:element name="editorial" type="xs:string"/>
+                <xs:choice>
+                    <xs:element name="precio" type="xs:integer" minOccurs="0"/>
+                    <xs:element name="precio_con_iva" type="xs:integer"/>
+                </xs:choice>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concensionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="concesionario.xsd" provincia="Malaga">
+
+
+<coche matricula = "6732KPC">
+    <marca>Seat</marca>
+    <modelo>Ateca</modelo>
+    <cilindrada>1.7</cilindrada>
+    <combustible>Diesel</combustible>
+    <precio>23.000$</precio>
+    <año>2018</año>
+    <color>negro</color>
+    <interesado>33358697A</interesado>
+    <interesado>30515455T</interesado>
+</coche>
+
+<coche matricula = "8220DGH">
+    <marca>Volkswaguen</marca>
+    <modelo>Polo</modelo>
+    <cilindrada>1.2</cilindrada>
+    <combustible>Gasolina</combustible>
+    <precio>5.000$</precio>
+    <color>color</color>
+    <interesado>60514553T</interesado>
+</coche>
+
+<coche matricula = "7786HHG">
+    <marca>Renault</marca>
+    <modelo>Megane</modelo>
+    <caballos>120</caballos>
+    <combustible>Diesel</combustible>
+    <precio>7.500$</precio>
+    <color>verde</color>
+</coche>
+
+
+
+</concensionario>

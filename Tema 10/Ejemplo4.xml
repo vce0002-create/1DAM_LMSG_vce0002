@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacursos [
+    <!ELEMENT listacursos (curso+)>
+    <!ELEMENT curso (profesor+,alumno*,contenido)>
+    <!ATTLIST curso codigo CDATA #REQUIRED>
+    <!ELEMENT profesor (dni,nombre,ap1,ap2?)>
+    <!ELEMENT alumno (dni,nombre,ap1,ap2?)>
+    <!ELEMENT contenido (descripcion,horas,creditos?)>
+
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ap1 (#PCDATA)>
+    <!ELEMENT ap2 (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT horas (#PCDATA)>
+    <!ELEMENT creditos (#PCDATA)>
+
+]>
+
+<listacursos>
+<curso codigo="LM">
+<profesor>
+    <dni>776564879E</dni>
+    <nombre>Tomás</nombre>
+    <ap1>Martínez</ap1>
+    <ap2>Ruiz</ap2>
+</profesor>
+<alumno>
+    <dni>77984531S</dni>
+    <nombre>Silvia</nombre>
+    <ap1>Ruiz</ap1>
+</alumno>
+<contenido>
+    <descripcion>Introducción a los lenguajes de marcas</descripcion>
+    <horas>200</horas>
+    <creditos>4</creditos>
+</contenido>
+</curso>
+</listacursos>

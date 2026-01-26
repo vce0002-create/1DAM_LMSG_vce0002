@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="EJ3.css" type="text/css"?>
+
+<temperatura>
+    <lugar>
+        <población>Jaén</población>
+        <fecha>15/12/2025</fecha>
+        <maxima>Máxima: 13ºC</maxima>
+        <minima>Minima: 7ºC</minima>
+    </lugar>
+    <previsiones>
+        <prevision estado ="nubes">
+        <hora>8:00horas</hora>
+        <grados>7ºC</grados>
+        </prevision>
+        <prevision estado="nubes">
+            <hora>16:00horas</hora>
+            <grados>13ºgrados</grados>
+        </prevision>
+        <prevision estado = "lluvia">
+        <hora>20:00 horas</hora>
+        <grados>10ºgrados</grados>
+        </prevision>
+    </previsiones>
+</temperatura>

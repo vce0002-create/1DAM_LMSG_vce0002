@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="listaclientes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                        <xs:element name="nombre" type="xs:string"></xs:element>
+                        <xs:element name="apellido" type="xs:string"></xs:element>
+                        <xs:choice>
+
+                        <xs:element name="dni" type="tipodni"></xs:element>
+                        <xs:element name="nie" type="xs:string"></xs:element>
+                        </xs:choice>
+
+                        <xs:element name="compras" type="tipocompra"></xs:element>
+                        <xs:element name="regalo" type="xs:string" minOccurs="0"
+                        maxOccurs="unbounded"></xs:element>
+
+                        </xs:sequence>
+                        <xs:attribute name="español" type="xs:string" use="required"></xs:attribute>
+
+                    </xs:complexType>
+
+                </xs:element>
+            </xs:sequence>
+
+        </xs:complexType>
+    </xs:element>
+
+    <!--TIPOS PERSONALIZADOS-->
+    <!--Longuitud DNI-->
+    <xs:simpleType name="tipodni">
+        <xs:restriction base="xs:string">
+            <xs:length value="9"></xs:length>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipocompra">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="3000"></xs:minInclusive>
+            <xs:maxInclusive value="4500"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
+<!-- Ejercicio 4 que sale en el punto 6, del tema 11 y es el 2 video. -->

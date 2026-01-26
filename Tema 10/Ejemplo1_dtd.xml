@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE listaclientes [
+    <!ELEMENT listaclientes (cliente+)>
+    <!ELEMENT cliente (nombre,diasentrega+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT diasentrega (#PCDATA)>
+    <!ATTLIST cliente cif CDATA #REQUIRED>
+]>
+
+<listaclientes>
+
+    <cliente cif="8767865">
+        <nombre>Mercasa</nombre>
+        <diasentrega>Lunes</diasentrega>
+        <diasentrega>Martes</diasentrega>
+    </cliente>
+
+    <cliente cif ="8293736">
+        <nombre>Acer SL</nombre>
+        <diasentrega>Lunes</diasentrega>
+    </cliente>
+</listaclientes>
+<!--XML es sensible a las mayusculas por lo que si pone mayuscula en una parte pero en otra no dará error.-->
