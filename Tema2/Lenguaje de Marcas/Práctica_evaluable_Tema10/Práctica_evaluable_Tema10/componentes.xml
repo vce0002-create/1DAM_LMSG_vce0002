@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="componentes.css"?>
+
+<!DOCTYPE listacomponentes [
+
+
+]> 
+
+<listacomponentes>
+  <componente id="CPU01" tipo="hardware">
+    <fabricante>
+      <cif>A12345678</cif>
+      <nombre>Intel</nombre>
+      <pais>USA</pais>
+      <ciudad>Santa Clara</ciudad>
+    </fabricante>
+    <tienda>
+      <nombre>PCComponentes</nombre>
+      <direccion>Calle Mayor 12</direccion>
+      <telefono>912345678</telefono>
+    </tienda>
+    <contenido>
+      <descripcion>Procesador Intel i7</descripcion>
+      <consumo>125W</consumo>
+      <garantia>3 años</garantia>
+      <precio_sin_iva>300</precio_sin_iva>
+    </contenido>
+  </componente>
+</listacomponentes>

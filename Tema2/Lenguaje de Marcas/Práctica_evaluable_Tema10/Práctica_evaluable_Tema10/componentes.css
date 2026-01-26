@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    display: block;}
+
+    fabricante{background-color: chocolate;
+    width: 300px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: solid 3px blue;
+    width: 300px;}
+    
+    fabricante:before{display: block;
+    content: "Componentes de informatica";
+    color: white;
+    background-color: black;
+    width: 280px;}
+
+    tienda{background-color: brown;
+    width: 300px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: solid 3px pink;
+    width: 300px;}
+    
+    tienda :before{ display: block;
+    display: "ipovresuesia" color= white;
+    background-color: black}
+
+    contenido{background-color: aqua;
+    padding: 5px;
+    margin-left: 10 px ;
+    margin-bottom: 10px;
+    border: solid 3px red;
+    width: 300px;}
+
+
+    contenido:before{
+        display: block;
+        display: "ipovresuesia" color= white;
+        background-color: black;}
+    contenido {border-botton:solid 1px black}
