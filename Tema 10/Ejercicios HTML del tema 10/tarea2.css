@@ -1,0 +1,31 @@
+*{ box-sizing: border-box;
+    display:block;
+}
+
+informatica{
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+informatica:before {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+literatura{
+    background-color: #e8f4e8;
+    border: 2px solid #8bc34a;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+literatura:before {
+    color: #4caf50;
+    font-family: 'Times New Roman', serif;
+}
+
+libros{
+    border-bottom: solid 1px black;
+}

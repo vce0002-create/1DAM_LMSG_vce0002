@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!Doctype biblioteca [
+
+<!--Validar -->
+
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (nombre, autor+, editorial?,paginas,(precio|precio_con_iva))>
+
+
+]>
+

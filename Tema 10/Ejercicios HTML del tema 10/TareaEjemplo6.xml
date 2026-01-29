@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE listaclientes[
+
+<!ELEMENT listaclientes (cliente+)>
+<!ELEMENT cliente (nombre,diasentrega+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT diasentrega (#PCDATA)>
+
+
+]>
+
+<listaclientes>
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <diasentrega>5</diasentrega>
+        <diasentrega>10</diasentrega>
+    </cliente>
+    <cliente>
+        <nombre>Ana Gómez</nombre>
+        <diasentrega>3</diasentrega>
+        <diasentrega>7</diasentrega>
+    </cliente>
+</listaclientes>

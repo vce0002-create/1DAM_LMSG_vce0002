@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (nombre, edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+
+<!ATTLIST empleado
+
+    sexo (y|h) #REQUIRED
+    sueldo CDATA #IMPLIED
+
+>
+
+]>
+
+<empleados>
+    <empleado sexo="h" sueldo="3000">
+        <nombre>Juan Perez</nombre>
+        <edad>30</edad>
+    </empleado>
+    <empleado sexo="y" sueldo="2800">
+        <nombre>Ana Gomez</nombre>
+        <edad>25</edad>
+    </empleado>
+</empleados>

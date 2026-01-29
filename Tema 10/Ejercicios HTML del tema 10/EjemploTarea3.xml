@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" 
+standalone="no"?>
+
+<!DOCTYPE biblioteca SYSTEM "./ejemplo.dtd">
+<biblioteca>
+    <libro>
+        <nombre>Introduccion a XML</nombre>
+        <autor>Payico payo</autor>
+        <editorial>Paranainfo</editorial>
+        <paginas>345</paginas>
+        <precio>29.95</precio>
+    </libro>
+    <libro>
+        <nombre>CSS3</nombre>
+        <autor>Luis ruiz</autor>
+        <editorial>Rodrigo payo</editorial>
+        <paginas>40000</paginas>
+        <precio>3</precio>
+    </libro>
+</biblioteca>

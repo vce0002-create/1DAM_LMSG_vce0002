@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="file.css" type="text/css"?>
+
+<listacllientes>
+    <cliente cif="567643H">
+        <nombre>Juan Pérez</nombre>
+        <direccion>Calle Falsa 123, Madrid</direccion>
+        <telefono>912345678</telefono>
+        <email>cacadevaca@gmail.com</email>
+    </cliente>
+    <cliente cif="98765432X">
+        <nombre>Ana Gómez</nombre>
+        <direccion>Avenida Siempre Viva 742, Barcelona</direccion>
+        <telefono>934567890</telefono>
+        <email>cucusclan@gmail.com</email>
+        </cliente>
+</listacllientes>

@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="concesionario">
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <xs:element name "concesionario">
         <xs:complexType>
             <xs:sequence>
 
-            
-                <xs:element name="coche" maxOccurs="unbounded">
-                    <xs:complexType>
+            <xs:element name="coche" type="xs:string" max0ccurs ="unbounded"></xs:element>
+
+            <xs:complexType>
+                <xs:sequence>
+
+                    <xs:element name="marca" type ="xs:string"></xs:element>
+                    <xs:element name ="modelo" type ="xs:string"></xs:element>
+
+                    <xs:choice>
+
+                        <xs:element name="cilindrada" type ="xs:decimal"></xs:element>
+                        <xs:element name="caballos" type ="tipoCaballo"></xs:element>
+
+                    </xs:choice>
+                    
+                    <xs:element name ="combustible" type ="tipoCombustible"></xs:element>
+                    <xs:element name="precio" type ="xs:string"></xs:element>
+                    <xs:element name ="año" type ="tipoAño" minOccurs="0"></xs:element>
+                    <xs:element name ="color" type ="xs:string"></xs:element>
+                    <xs:element name="interesados" type = "tipoDni" maxOccurs="unbounded" minOccurs="0"></xs:element>
+                    <xs:element name="accesorios" minOccurs ="0" type = "tipoAccesorio"></xs:element>
 
 
-                        <xs:sequence>
-                            <xs:element name="marca" type="xs:string"></xs:element>
-                            <xs:element name="modelo" type="xs:string"></xs:element>
+                     </xs:sequence>  
 
+                        <xs:atribute name="Matricula" type="xs:string" use ="required"></xs:atribute>
 
-                            <xs:choice>
-                                <xs:element name="cilindrada" type="xs:string"></xs:element>
-                                <xs:element name="caballos" type="tipocaballo"></xs:element>
-                            </xs:choice>
-
-
-                            <xs:element name="combustible" type="tipocombustible"></xs:element>
-                            <xs:element name="precio" type="xs:string"></xs:element>
-                            <xs:element name="año" type="tipoaño" minOccurs="0"></xs:element>
-                            <xs:element name="color" type="xs:string"></xs:element>
-                            <xs:element name="interesado" type="tipodni" minOccurs="0"
-                                maxOccurs="unbounded"></xs:element>
-                            <xs:element name="accesorios" type="tresaccesorios" minOccurs="0"></xs:element>
-                        </xs:sequence>
-
-
-                        <xs:attribute name="matricula" type="xs:string" use="required"></xs:attribute>
-                    </xs:complexType>
-                </xs:element>
-
+                    </xs:sequence>
+                </xs:sequence>
+            </xs:complexType>
 
             </xs:sequence>
-            <xs:attribute name="provincia" type="xs:string" use="required"></xs:attribute>
-        </xs:complexType>
+        </xs:complexType>    
     </xs:element>
 
+        <xs:complexType name ="tipoCombustible">
+            <xs:restriction base="xs:string">
 
-    <xs:simpleType name="tipocombustible">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Gasolina"></xs:enumeration>
-            <xs:enumeration value="Diesel"></xs:enumeration>
-        </xs:restriction>
-    </xs:simpleType>
+                <xs:enumeration value="Diesel"></xs:enumeration>
+                <xs:enumeration value="Gasolina"></xs:enumeration>
 
-    <xs:simpleType name="tipocaballo">
-        <xs:restriction base="xs:unsignedShort">
-            <xs:minInclusive value="60"></xs:minInclusive>
-            <xs:maxInclusive value="180"></xs:maxInclusive>
-        </xs:restriction>
-    </xs:simpleType>
+            </xs:restriction>
+        </xs:complexType>
+        <xs:complexType name ="tipoCaballo">
+            <xs:restriction base="xs:unsignedshort">
 
+                <xs:minInclusive value="60"></xs:minInclusive>
+                <xs:maxInclusive value="180"></xs:maxInclusive>
 
-    <!-- Año de cuatro cifras-->
-    <xs:simpleType name="tipoaño">
-        <xs:restriction base="xs:unsignedShort">
-            <xs:totalDigits value="4"></xs:totalDigits>
-        </xs:restriction>
-    </xs:simpleType>
+            </xs:restriction>
+        </xs:complexType>
 
+        <xs:complexType name="tipoAño">
+            <xs:restriction base="insignedShort">
 
-    <xs:simpleType name="tipodni">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="\d{8}[A-Z]"></xs:pattern>
-        </xs:restriction>
-    </xs:simpleType>
+                <xs:totalDigits value="4"></xs:totalDigits>
 
+            </xs:restriction>
+        </xs:complexType>
 
-    <xs:simpleType name="tipoaccesorio">
-        <xs:list itemType="xs:string"></xs:list>
-    </xs:simpleType>
+        <xs:simpleType name="tipoDni">
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{8}[A-Z]"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
 
-    <xs:simpleType name="tresaccesorios">
-        <xs:restriction base="tipoaccesorio">
-            <xs:maxLength value="3"></xs:maxLength>
-        </xs:restriction>
-    </xs:simpleType>
+        <xs:simpleType name="tipoAccesorio">
+            <xs:list itemType="xs:string"></xs:list>
+        </xs:simpleType>
+
+        <xs:simpleType name="tipoAccesorio">
+            <xs:restriction base="tipoAccesorio">
+                <xs:maxLenght value="3"></xs:maxLenght>
+            </xs:restriction>
+        </xs:simpleType>
 </xs:schema>
